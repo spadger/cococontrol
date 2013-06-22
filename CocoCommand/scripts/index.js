@@ -112,6 +112,7 @@ var segment = function (ctx, segmentNumber, r, colour, active) {
     a1 = (a1 % 360) * Math.PI / 180;
     a2 = (a2 % 360) * Math.PI / 180;
 
+    var border = active ? "black" : "white";
     ctx.path([["M", x, y], ["l", r * Math.cos(a1), r * Math.sin(a1)], ["A", r, r, 0, +flag, 1, x + r * Math.cos(a2), y + r * Math.sin(a2)], ["z"]])
-          .attr({ "type": "path", "stroke": "white", "fill": colour });
+          .attr({ "type": "path", "stroke": border, "fill": colour, "stroke-width":3 });
 };
