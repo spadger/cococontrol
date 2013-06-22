@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using CocoCommand.Hubs;
 
 namespace CocoCommand.Controllers
 {
@@ -6,11 +7,13 @@ namespace CocoCommand.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.CurrentLevel = CocoCommandHub.CurrentStatus;
             return View();
         }
 
         public ActionResult Admin()
         {
+            ViewBag.CurrentLevel = CocoCommandHub.CurrentStatus;
             return View();
         }
     }

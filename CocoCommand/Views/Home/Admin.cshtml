@@ -4,6 +4,9 @@
 @section scripts
 {
   <script src="/signalr/hubs"></script>
+  <script>
+    var currentThreatLevel = @ViewBag.CurrentLevel;
+  </script>
 }
 
-<div id="slider" data-bind="slider:status" data-slider-min="0" data-slider-max="4" data-slider-step="1"></div>
+<div id="slider" data-bind="slider:status" data-slider-min="0" data-slider-max="4" data-slider-value="@ViewBag.CurrentLevel" data-slider-step="1"></div>

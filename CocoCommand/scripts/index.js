@@ -10,7 +10,7 @@ var CocoCommandVM = function() {
         self.status(status);
     };
 
-    this.status = ko.observable(0);
+    this.status = ko.observable(currentThreatLevel);
 
     this.statusText = ko.computed(function () {
         switch (self.status()) {

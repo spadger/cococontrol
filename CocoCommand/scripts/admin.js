@@ -1,7 +1,7 @@
 ﻿/// <reference path="_references.js" />
 
 var CocoCommandVM = function() {
-    this.status = ko.observable();
+    this.status = ko.observable(currentThreatLevel);
 
     this.status.subscribe(function (val) {
         commandHub.server.updateStatus(val);
