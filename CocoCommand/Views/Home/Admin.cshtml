@@ -9,4 +9,8 @@
   </script>
 }
 
-<div id="slider" data-bind="slider:status" data-slider-min="0" data-slider-max="4" data-slider-value="@ViewBag.CurrentLevel" data-slider-step="1"></div>
+<div class="container">
+  <div class="row" style="padding-top:100px;width: 50%; margin: 0 auto;">
+    <div id="slider slider-horizontal" style="width: 500px;" data-bind="slider:status" data-slider-min="0" data-slider-max="4" data-slider-value="@ViewBag.CurrentLevel" data-slider-step="1"></div>
+  </div>
+</div>
