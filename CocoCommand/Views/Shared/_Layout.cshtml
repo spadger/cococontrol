@@ -1,0 +1,19 @@
+﻿@{
+  Bundles.Reference("content/site.css");
+  Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>CoCoCommand</title>
+  @Bundles.RenderScripts()
+  @Bundles.RenderStylesheets()
+  @RenderSection("scripts", false)
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

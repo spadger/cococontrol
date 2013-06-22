@@ -1,0 +1,187 @@
+﻿/*
+    @reference "bootstrap.css";
+    @reference "bootstrap-responsive.css";
+    @reference "slider.css";
+*/
+
+#slider{ width: 50%;}
+
+.Calm{}
+.Concern{}
+.Consternation {
+        -moz-animation-duration: 4s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -moz-animation-name: yellow;
+    -webkit-animation-name: yellow;
+    animation-name: yellow;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.Crisis
+{
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -moz-animation-name: orange;
+    -webkit-animation-name: orange;
+    animation-name: orange;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.Catastrophe
+{
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -moz-animation-name: awooga;
+    -webkit-animation-name: awooga;
+    animation-name: awooga;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    background-color: #CC0000
+}
+
+@-moz-keyframes yellow {
+  0% {
+    color:yellow;
+  }
+
+  50% {
+    color: black;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+@-webkit-keyframes yellow {
+  0% {
+    color:yellow;
+  }
+
+  50% {
+    color: black;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+@keyframes yellow {
+  0% {
+    color:yellow;
+  }
+
+  50% {
+    color: black;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+
+
+
+
+
+
+
+
+@-moz-keyframes orange {
+  0% {
+    color:orange;
+  }
+
+  50% {
+    color: black;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+@-webkit-keyframes orange {
+  0% {
+    color:orange;
+  }
+
+  50% {
+    color: black;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+@keyframes orange {
+  0% {
+    color:orange;
+  }
+
+  50% {
+    color: black;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+
+
+
+
+
+@-moz-keyframes awooga {
+  0% {
+    color:red;
+  }
+
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@-webkit-keyframes awooga {
+  0% {
+    color:red;
+  }
+
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes awooga {
+  0% {
+    color:red;
+  }
+
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.status-container h1 {
+    font-size: 5em;
+    padding-top: 20px;
+    height: 80px;
+}
+
+body {
+    margin-top: 0;
+}

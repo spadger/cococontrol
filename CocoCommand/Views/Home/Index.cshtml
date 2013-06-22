@@ -1,0 +1,12 @@
+﻿@{
+  Bundles.Reference("scripts/index.js");
+}
+@section scripts
+{
+  <script src="/signalr/hubs"></script>
+}
+
+
+<div class="status-container">
+<h1 data-bind="text:statusText, css:style"></h1>
+</div>
