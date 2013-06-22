@@ -176,6 +176,7 @@
     <Content Include="scripts\jquery.signalR-1.1.2.js" />
     <Content Include="scripts\knockout-2.2.1.js" />
     <Content Include="scripts\index.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\raphael.js" />
     <Content Include="scripts\_references.js" />
     <Content Include="Web.config" />
