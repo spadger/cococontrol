@@ -1,14 +1,24 @@
 ﻿/*
     @reference "bootstrap.css";
-    @reference "bootstrap-responsive.css";
+    
     @reference "slider.css";
 */
 
 #slider{ width: 50%;}
 
-.Calm{}
-.Concern{}
-.Consternation {
+.status-container {
+    font-size:6em;
+    width:100%;
+    background-color:#777
+}
+
+.Calm .status-container a span{
+    color:#44FF44;
+}
+.Concern .status-container a span{
+    color:white;
+}
+.Consternation .status-container a span {
         -moz-animation-duration: 4s;
     -webkit-animation-duration: 4s;
     animation-duration: 4s;
@@ -18,8 +28,10 @@
     -moz-animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+
+    color:yellow;
 }
-.Crisis
+.Crisis .status-container a span
 {
     -moz-animation-duration: 2s;
     -webkit-animation-duration: 2s;
@@ -30,8 +42,11 @@
     -moz-animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+
+    color:orange;
 }
-.Catastrophe
+
+ .Catastrophe .status-container a span
 {
     -moz-animation-duration: 1s;
     -webkit-animation-duration: 1s;
@@ -42,9 +57,11 @@
     -moz-animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-
-    background-color: #CC0000
 }
+
+ .Catastrophe .status-container {
+     background-color: #CC0000;
+ }
 
 @-moz-keyframes yellow {
   0% {

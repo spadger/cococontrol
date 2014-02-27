@@ -1,15 +1,18 @@
 ﻿@{
-  Bundles.Reference("scripts/index.js");
+    Bundles.Reference("scripts/index.js");
 }
 @section scripts
 {
-  <script src="/signalr/hubs"></script>
-  <script>
-    var currentThreatLevel = @ViewBag.CurrentLevel;
-  </script>
+    <script src="/signalr/hubs"></script>
+    <script>
+        var currentThreatLevel = @ViewBag.CurrentLevel;
+    </script>
 }
 
-
-<div class="status-container">
-<h1 data-bind="text:statusText, css:style"></h1>
+<div data-bind="css:style">
+    <div class="status-container">
+        <a href="#">
+            <span data-bind="text:statusText"></span>
+        </a>
+    </div>
 </div>

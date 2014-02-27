@@ -10,9 +10,12 @@ var CocoCommandVM = function() {
 
 ko.bindingHandlers.slider = {
     init: function (element, valueAccessor, allBindingsAccessor, viewModel, bindingContext) {
-        $(element).slider().bind('slide', function (ev) {
-            var modelValue = valueAccessor();
-            ko.expressionRewriting.writeValueToProperty(modelValue, allBindingsAccessor, 'checked', ev.value, true);
+        var initialValue = ko.unwrap(valueAccessor());
+        $(element).slider({value:initialValue})
+                  .bind('slide', function (ev) {
+            
+                var modelValue = valueAccessor();
+                ko.expressionRewriting.writeValueToProperty(modelValue, allBindingsAccessor, 'checked', ev.value, true);
         });
     },
 };

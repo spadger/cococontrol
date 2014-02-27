@@ -32,7 +32,7 @@ var CocoCommandVM = function() {
     this.style = ko.computed(function () {
         switch (self.status()) {
             case 0:
-                return 'calm';
+                return 'Calm';
             case 1:
                 return 'Concern';
             case 2:
