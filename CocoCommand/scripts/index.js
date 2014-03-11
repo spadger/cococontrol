@@ -122,4 +122,8 @@ $(function() {
     setInterval(function() {
         $.get('/ping');
     }, 1000 * 60 * 10);
+
+    setInterval(function () {
+        window.location = window.location;
+    }, 1000 * 60 * 60 * 24);
 });
