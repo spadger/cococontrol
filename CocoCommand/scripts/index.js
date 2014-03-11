@@ -116,3 +116,10 @@ var segment = function (ctx, segmentNumber, r, colour, active) {
     ctx.path([["M", x, y], ["l", r * Math.cos(a1), r * Math.sin(a1)], ["A", r, r, 0, +flag, 1, x + r * Math.cos(a2), y + r * Math.sin(a2)], ["z"]])
           .attr({ "type": "path", "stroke": border, "fill": colour, "stroke-width":3 });
 };
+
+
+$(function() {
+    setInterval(function() {
+        $.get('/ping');
+    }, 1000 * 60 * 10);
+});

@@ -16,5 +16,10 @@ namespace CocoCommand.Controllers
             ViewBag.CurrentLevel = CocoCommandHub.CurrentStatus;
             return View();
         }
+
+        public ActionResult Ping()
+        {
+            return new EmptyResult();
+        }
     }
 }
